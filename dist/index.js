@@ -7982,10 +7982,10 @@ function $d832f2ef8a5ce6ac$var$setLockState(workspaceId) {
     const lockImage = lock.querySelector("img");
     if (window.lockState[workspaceId] == 1) {
         window.lockState[workspaceId] = 0;
-        lockImage.src = $d832f2ef8a5ce6ac$var$lockClosed;
+        lockImage.src = $d832f2ef8a5ce6ac$var$lockOpen;
     } else if (window.lockState[workspaceId] == 0) {
         window.lockState[workspaceId] = 1;
-        lockImage.src = $d832f2ef8a5ce6ac$var$lockOpen;
+        lockImage.src = $d832f2ef8a5ce6ac$var$lockClosed;
     }
     document.dispatchEvent(new CustomEvent("lockChange", {
         detail: {
